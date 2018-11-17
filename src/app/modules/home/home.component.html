@@ -1,0 +1,13 @@
+<div fxLayout="column" fxFill>
+  <div fxFlex="80"  fxFill fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10" fxLayoutAlign="space-around center" fxFlexOffset="10">
+    <div fxFlex="30" *ngFor="let picture of pictures">
+      <a routerLink="/characters/detail/{{picture.id}}"><img mat-card-image [src]="picture.image"></a>
+    </div>
+    <div  fxFlex="98" fxLayoutAlign="end center" fxLayoutGap="5">
+      <a class="example-button-row" routerLink="/characters">
+        <button mat-flat-button color="primary">VER TODOS</button>
+      </a>
+    </div>
+  </div>
+</div>
+|

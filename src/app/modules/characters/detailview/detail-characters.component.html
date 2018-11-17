@@ -1,0 +1,25 @@
+<!-- <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg">
+  </div>
+  <div fxFlex="20%">
+    prueba
+  </div>
+</div> -->
+<div fxLayout="column" fxFill fxLayoutAlign="center center">
+    <div fxFlex="80" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10" fxLayoutAlign="space-around center" fxFlexOffset="10">
+        <div fxFlex="30">
+            <mat-card fxFlex="100" class="card-picture" *ngIf="character">
+                <img mat-card-image  src="{{ character.image }}">
+            </mat-card>
+        </div>
+        <div fxFlex="50">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab possimus deserunt, error magni temporibus dolor odit. At facilis eveniet sunt quas, maiores fuga, voluptates illum et, ut aliquid ratione optio!
+        </div>
+        <div  fxFlex="98" fxLayoutAlign="end center" fxLayoutGap="5">
+          <a class="example-button-row" routerLink="/characters">
+            <button mat-flat-button color="primary">VER TODOS</button>
+          </a>
+        </div>
+    </div>
+</div>
